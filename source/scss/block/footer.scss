@@ -1,0 +1,167 @@
+.footer__info {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer__phone {
+  position: relative;
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: $dark-blue;
+  cursor: default;
+  margin: 0 0 0 -2px;
+
+  &-link {
+    font-weight: 500;
+    color: $dark-blue;
+    text-decoration: none;
+
+    &:hover {
+      color: $dark-orange;
+      transition-duration: 0.3s;
+    }
+
+    &:active {
+      color: transparentize($color: $dark-orange, $amount: 0.5);
+      transition-duration: 0.1s;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-image: url("../images/icon-phone.svg");
+    top: 17px;
+    left: -30px;
+  }
+}
+
+.footer__email {
+  position: relative;
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: $dark-blue;
+  cursor: default;
+  margin: 0 0 0 22px;
+
+  &-link {
+    font-weight: 500;
+    color: $dark-blue;
+    text-decoration: none;
+    border-bottom: 1px solid $dark-orange;
+
+    &:hover {
+      color: $dark-orange;
+      transition-duration: 0.3s;
+    }
+
+    &:active {
+      color: transparentize($color: $dark-orange, $amount: 0.5);
+      border-bottom: 1px solid transparentize($color: $dark-orange, $amount: 0.5);
+      transition-duration: 0.1s;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 11px;
+    background-image: url("../images/icon-email.svg");
+    background-repeat: no-repeat;
+    top: 18px;
+    left: -31px;
+  }
+}
+
+.footer__address {
+  position: relative;
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: $dark-blue;
+  font-style: normal;
+  cursor: default;
+  margin: 0 -18px 0 0;
+
+  &-check {
+    font-family: "GothamPro", "Arial", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: default;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 11px;
+    background-image: url("../images/icon-address.svg");
+    background-repeat: no-repeat;
+    top: 18px;
+    left: -30px;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid transparentize($color: $dark-blue, $amount: 0.8);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__text {
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: transparentize($color: $dark-blue, $amount: 0.4);
+  text-transform: uppercase;
+  cursor: default;
+  margin: 8px 0 0 75px;
+}
+
+.footer__site {
+  position: relative;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: transparentize($color: $dark-blue, $amount: 0.4);
+  text-transform: uppercase;
+  cursor: default;
+  margin: 0 105px 0 0;
+
+  &-link {
+    color: transparentize($color: $dark-blue, $amount: 0.4);
+    text-transform: none;
+
+    &:hover {
+      color: $dark-blue;
+      transition-duration: 0.3s;
+    }
+
+    &:active {
+      color: transparentize($color: $dark-blue, $amount: 0.7);
+      transition-duration: 0.1s;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    background-image: url("../images/logo-tian.svg");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    top: 0;
+    left: -40px;
+  }
+}

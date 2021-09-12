@@ -1,0 +1,58 @@
+.company {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  padding-top: 55px;
+}
+
+.company__slogan {
+  font-family: "PlayfairDisplay", "Times New Roman", serif;
+  font-size: 22px;
+  line-height: 36px;
+  font-style: italic;
+  color: $dark-blue;
+  width: 80%;
+  text-align: center;
+  cursor: default;
+  margin: 37px 0 0 125px;
+}
+
+.company__text,
+.company__text-2 {
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: transparentize($color: $dark-blue, $amount: 0.4);
+  width: 65%;
+  text-align: center;
+  cursor: default;
+  margin: 30px 0 0 210px;
+}
+
+.company__text-2 {
+  margin: 10px 0 0 205px;
+}
+
+.company__link {
+  display: block;
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 38px;
+  font-weight: 500;
+  width: 185px;
+  background-color: $orange;
+  color: transparentize($color: $dark-blue, $amount: 0.5);
+  text-decoration: none;
+  margin: 42px 0 0 478px;
+  padding: 5px 10px 5px 22px;
+
+  &:hover {
+    background-color: $dark-orange;
+    transition-duration: 0.5s;
+  }
+
+  &:active {
+    color: transparentize($color: $dark-blue, $amount: 0.7);
+    transition-duration: 0.1s;
+  }
+}

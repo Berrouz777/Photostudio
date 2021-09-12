@@ -1,0 +1,21 @@
+.page {
+  height: 100%;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  scroll-behavior: smooth;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  min-width: 1280px;
+  height: 100%;
+  background-color: $white;
+}
+
+ul {
+  @include list-style;
+}

@@ -1,0 +1,253 @@
+.header {
+  min-height: 960px;
+  background-color: $dark-blue;
+  background-image: url("../images/header-photo.jpg");
+  background-size: 100% 960px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/header-photo@2x.jpg");
+  }
+}
+
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.header__phone {
+  position: relative;
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: transparentize($color: $white, $amount: 0.5);
+  cursor: default;
+  margin: 34px 0 0 102px;
+
+  &-link {
+    font-weight: 500;
+    color: transparentize($color: $white, $amount: 0.5);
+    text-decoration: none;
+
+    &:hover {
+      color: $orange;
+      transition-duration: 0.3s;
+    }
+
+    &:active {
+      color: $dark-orange;
+      transition-duration: 0.1s;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-image: url("../images/icon-phone.svg");
+    top: 17px;
+    left: -30px;
+  }
+}
+
+.header__logo {
+  margin-right: 5px;
+}
+
+.header__address {
+  position: relative;
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: transparentize($color: $white, $amount: 0.5);
+  font-style: normal;
+  cursor: default;
+  margin: 33px 95px 0 0;
+
+  &-check {
+    font-family: "GothamPro", "Arial", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: default;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 12px;
+    background-image: url("../images/icon-address.svg");
+    top: 17px;
+    left: -28px;
+  }
+}
+
+.header__nav {
+  margin-top: 5px;
+}
+
+.header__contents {
+  margin: 215px 0 0 93px;
+  width: 600px;
+}
+
+.header__content {
+  display: none;
+  animation: moveright 2s;
+
+  &--show {
+    display: block;
+  }
+}
+
+@keyframes moveright {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.header__title {
+  font-family: "PlayfairDisplay", "Times New Roman", serif;
+  font-size: 52px;
+  line-height: 62px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: $white;
+  cursor: default;
+  margin: 0;
+}
+
+.header__text {
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: $white;
+  cursor: default;
+  margin: 24px 0 0 0;
+}
+
+.header__button {
+  display: inline-block;
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 38px;
+  font-weight: 500;
+  width: 130px;
+  background-color: $orange;
+  color: transparentize($color: $dark-blue, $amount: 0.5);
+  text-decoration: none;
+  padding: 8px 18px 5px 21px;
+  margin: 42px 16px 0 0;
+
+  &:hover {
+    background-color: $dark-orange;
+    transition-duration: 0.5s;
+  }
+
+  &:active {
+    color: transparentize($color: $dark-blue, $amount: 0.7);
+    transition-duration: 0.1s;
+  }
+}
+
+.header__mouse {
+  position: absolute;
+  bottom: 25px;
+  left: -35px;
+  fill: $white;
+
+  &:hover {
+    fill: $dark-orange;
+  }
+}
+
+.header__click {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  color: $dark-blue;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  fill: $white;
+
+  &-back {
+    top: 546px;
+    left: -53px;
+  }
+
+  &-next {
+    top: 546px;
+    right: -53px;
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    fill: $dark-orange;
+  }
+
+  &:active {
+    fill: transparentize($color: $dark-orange, $amount: 0.5);
+  }
+}
+
+.header__dots {
+  display: flex;
+  width: 100px;
+  margin: 180px 0 0 972px;
+}
+
+.header__dot {
+  display: block;
+  position: relative;
+  width: 17px;
+  height: 17px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  margin-right: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: $white;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    &::before {
+      background-color: $dark-orange;
+    }
+  }
+
+  &--active {
+    border: 2px solid $white;
+
+    &::before {
+      top: 4px;
+      left: 4px;
+    }
+
+    &:hover {
+      &::before {
+        background-color: $white;
+      }
+    }
+  }
+}

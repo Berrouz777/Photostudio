@@ -1,0 +1,158 @@
+.nav__list {
+  display: grid;
+  grid-template-columns: 212px 202px 218px 160px 210px 170px;
+  grid-template-rows: auto;
+  width: 100%;
+}
+
+.nav__item {
+  position: relative;
+  min-height: 78px;
+  background-color: $dark-blue;
+  padding-left: 48px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 6px;
+    background-image: url("../images/nav-arrow.svg");
+    background-repeat: no-repeat;
+    top: 38px;
+    right: 51px;
+  }
+
+  &:nth-of-type(2) {
+    padding-left: 42px;
+
+    &::after {
+      right: 32px;
+    }
+  }
+
+  &:nth-of-type(3) {
+    padding-left: 60px;
+
+    &::after {
+      right: 43px;
+    }
+  }
+
+  &:nth-of-type(4) {
+    padding-left: 40px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &:nth-of-type(5) {
+    padding-left: 57px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &:last-of-type {
+    padding-left: 48px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &:hover {
+    background-color: $blue;
+    transition-duration: 0.5s;
+
+    &>.nav__sublist {
+      display: flex;
+      animation: translateTop 0.5s;
+    }
+  }
+}
+
+@keyframes translateTop {
+  0% {
+    opacity: 0.5;
+    transform: translateY(-20px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.nav__title {
+  display: flex;
+  position: relative;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 26px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  height: 49px;
+  color: $white;
+  padding-top: 29px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav__sublist {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 78px;
+  left: 0;
+
+  &-company {
+    width: 212px;
+
+    .nav__subtitle {
+      padding-left: 48px;
+    }
+  }
+
+  &-rent {
+    width: 202px;
+
+    .nav__subtitle {
+      padding-left: 41px;
+    }
+  }
+
+  &-foto {
+    width: 218px;
+
+    .nav__subtitle {
+      padding-left: 60px;
+    }
+  }
+
+}
+
+.nav__subitem {
+  background-color: $blue;
+
+  &:hover {
+    background-color: $light-blue;
+    transition-duration: 0.5s;
+  }
+}
+
+.nav__subtitle {
+  display: flex;
+  align-items: center;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 51px;
+  font-weight: 400;
+  color: $white;
+  text-decoration: none;
+}

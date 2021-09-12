@@ -1,0 +1,23 @@
+.heading {
+  position: relative;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: transparentize($color: $dark-blue, $amount: 0.4);
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  cursor: default;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-color: $orange;
+    top: -15px;
+    left: 582px;
+  }
+}

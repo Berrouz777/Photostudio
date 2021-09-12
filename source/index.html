@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Главная страница фотостудии Van Gog.">
+  <title>Фотостудия Van Gog</title>
+  <link rel="preload" href="fonts/gothampro.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/gothampro-medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/playfairdisplay-bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/proximanova-semibold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/proximanova-regular.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body class="body">
+
+  <header class="header">
+    <div class="container">
+      <h1 class="visually-hidden">Фотостудия Van Gog</h1>
+      <div class="header__info">
+        <p class="header__phone">телефон администратора<br>
+          <a href="tel:+78002000600" class="header__phone-link">8 800 2000 600</a>
+        </p>
+        <a class="header__logo">
+          <picture>
+            <source type="image/webp" srcset="images/logo.webp 1x, images/logo@2x.png 2x">
+            <img src="images/logo.png" srcset="images/logo@2x.png 2x" width="97" height="102"
+              alt="Логотип фотостудии Van Gog.">
+          </picture>
+        </a>
+        <address class="header__address">адрес фотостудии<br>
+          <span class="header__address-check">Челябинск, Худякова, 12а</span>
+        </address>
+      </div>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__title">О компании</a>
+            <ul class="nav__sublist nav__sublist-company">
+              <li class="nav__subitem">
+                <a href="#" class="nav__subtitle">Наша фотостудия</a>
+              </li>
+              <li class="nav__subitem">
+                <a href="#" class="nav__subtitle">Отзывы</a>
+              </li>
+              <li class="nav__subitem">
+                <a href="#" class="nav__subtitle">Частые вопросы</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__title">Аренда залов</a>
+            <ul class="nav__sublist nav__sublist-rent">
+              <li class="nav__subitem">
+                <a href="#rent" class="nav__subtitle">Футуризм</a>
+              </li>
+              <li class="nav__subitem">
+                <a href="#" class="nav__subtitle">Космос</a>
+              </li>
+              <li class="nav__subitem">
+                <a href="#" class="nav__subtitle">Минимализм</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__title">Фотосессии</a>
+            <ul class="nav__sublist nav__sublist-foto">
+              <li class="nav__subitem">
+                <a href="#" class="nav__subtitle">Семейная</a>
+              </li>
+              <li class="nav__subitem">
+                <a href="#" class="nav__subtitle">Свадебная</a>
+              </li>
+              <li class="nav__subitem">
+                <a href="#" class="nav__subtitle">Love Story</a>
+              </li>
+              <li class="nav__subitem">
+                <a href="#" class="nav__subtitle">Весь список</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__title">Правила</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__title">Портфолио</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__title">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__contents">
+        <li class="header__content header__content--show">
+          <p class="header__title">Детские фотосессии по разумным ценам</p>
+          <p class="header__text">Забронируйте фотосъёмку и получите скидку 50% <br>на следующую фотосессию для всей
+            семьи!
+          </p>
+          <a href="#" class="header__button">Арендовать зал</a>
+          <a href="#" class="header__button">Заказать съёмку</a>
+        </li>
+        <li class="header__content">
+          <p class="header__title">Свадебные фотосессии по разумным ценам</p>
+          <p class="header__text">Забронируйте фотосъёмку и получите скидку 50% <br>на следующую фотосессию для всей
+            семьи!
+          </p>
+          <a href="#" class="header__button">Арендовать зал</a>
+          <a href="#" class="header__button">Заказать съёмку</a>
+        </li>
+        <li class="header__content">
+          <p class="header__title">Деловые фотосессии по разумным ценам</p>
+          <p class="header__text">Забронируйте фотосъёмку и получите скидку 50% <br>на следующую фотосессию для всей
+            семьи!
+          </p>
+          <a href="#" class="header__button">Арендовать зал</a>
+          <a href="#" class="header__button">Заказать съёмку</a>
+        </li>
+      </ul>
+      <a href="#advantages" class="header__mouse">
+        <svg width="20px" height="56px">
+          <use xlink:href="images/sprite_auto.svg#mouse"></use>
+        </svg>
+      </a>
+      <button class="header__click header__click-back" type="button" aria-label="Предыдущий слайд">
+        <svg width="19px" height="12px">
+          <use xlink:href="images/sprite_auto.svg#arrow-slider"></use>
+        </svg>
+      </button>
+      <button class="header__click header__click-next" type="button" aria-label="Следующий слайд">
+        <svg width="19px" height="12px">
+          <use xlink:href="images/sprite_auto.svg#arrow-slider"></use>
+        </svg>
+      </button>
+      <div class="header__dots">
+        <button class="header__dot" type="button" aria-label="Первый слайд"></button>
+        <button class="header__dot" type="button" aria-label="Второй слайд"></button>
+        <button class="header__dot header__dot--active" type="button" aria-label="Третий слайд"></button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <section class="advantages" id="advantages">
+        <h2 class="advantages__heading heading">Наши преимущества</h2>
+        <p class="advantages__title title">5 причин прийти к нам</p>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <svg width="77" height="77">
+              <use xlink:href="images/sprite_auto.svg#item1"></use>
+            </svg>
+            <p class="advantages__subtitle">Современные декорации</p>
+            <p class="advantages__text">Мы постоянно совершенствуемся, основываясь на мировых тенденциях, практичности и
+              пожеланиях наших клиентов.</p>
+          </li>
+          <li class="advantages__item">
+            <svg width="77" height="77">
+              <use xlink:href="images/sprite_auto.svg#item2"></use>
+            </svg>
+            <p class="advantages__subtitle">6 различных залов</p>
+            <p class="advantages__text">От классики до футуризма, все для вашего творчества и реализации всех, даже
+              самых
+              сложных творческих идей.</p>
+          </li>
+          <li class="advantages__item">
+            <svg width="77" height="77">
+              <use xlink:href="images/sprite_auto.svg#item3"></use>
+            </svg>
+            <p class="advantages__subtitle">Профессиональные фотографы</p>
+            <p class="advantages__text">Наши фотографы работают во всех популярных видах жанра фотографии и обеспечивают
+              качественный результат.</p>
+          </li>
+          <li class="advantages__item">
+            <svg width="77" height="77">
+              <use xlink:href="images/sprite_auto.svg#item4"></use>
+            </svg>
+            <p class="advantages__subtitle">Профессиональная техника</p>
+            <p class="advantages__text">Фотостудия имеет профессиональную технику и свет для сьёмки, есть все
+              необходимое для комфортной работы и получения желаемого результата.</p>
+          </li>
+          <li class="advantages__item">
+            <svg width="77" height="77">
+              <use xlink:href="images/sprite_auto.svg#item5"></use>
+            </svg>
+            <p class="advantages__subtitle">Открыты для сотрудничества</p>
+            <p class="advantages__text">Мы открыты для сотрудничества, проводим мастер-классы фотографов, семинары,
+              выездные регистрации, воркшопы и т.д.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="company">
+        <h2 class="company__heading heading">О компании</h2>
+        <p class="company__title title">Наша фотостудия</p>
+        <p class="company__slogan">Van Gog фотостудия это творческое&ensp;арт - пространство для реализации любых идей и
+          задач!
+        </p>
+        <p class="company__text"> Это не просто студия для сьемки, это целый комплекс услуг для вас и ваших близких!</p>
+        <p class="company__text-2">Мы работаем по системе «все включено», обратившись к нам вам нужно только одно,
+          рассказать, что вы хотите, а
+          мы в свою очередь предложим варианты фотосъемки<br> и варианты для реализации ваших идей.
+        </p>
+        <a href="#" class="company__link">Больше о фотостудии</a>
+      </section>
+      <section class="services">
+        <h2 class="services__heading heading">Услуги</h2>
+        <p class="services__title title">Фотосессии</p>
+        <ul class="services__list">
+          <li class="services__item">
+            <a href="#" class="services__link">
+              <div class="services__container-img">
+                <picture>
+                  <source type="image/webp" srcset="images/foto1.webp 1x, images/foto1@2x.webp 2x">
+                  <img class="services__image" src="images/foto1.jpg" srcset="images/foto1@2x.jpg 2x" width="340"
+                    height="227" alt="Новогоднее фото молодой семьи с двумя детьми.">
+                </picture>
+              </div>
+              <div class="services__icon">
+                <svg width="14" height="12">
+                  <use xlink:href="images/sprite_auto.svg#arrow"></use>
+                </svg>
+              </div>
+              <h3 class="services__text">Семейная<br> фотосессия</h3>
+            </a>
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link">
+              <div class="services__container-img">
+                <picture>
+                  <source type="image/webp" srcset="images/foto2.webp 1x, images/foto2@2x.webp 2x">
+                  <img class="services__image" src="images/foto2.jpg" srcset="images/foto2@2x.jpg 2x" width="340"
+                    height="227" alt="Светлое фото маленькой девочки, которую держит мама за обе ручки.">
+                </picture>
+              </div>
+              <div class="services__icon">
+                <svg width="14" height="12">
+                  <use xlink:href="images/sprite_auto.svg#arrow"></use>
+                </svg>
+              </div>
+              <h3 class="services__text">Детская<br> фотосессия</h3>
+            </a>
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link">
+              <div class="services__container-img">
+                <picture>
+                  <source type="image/webp" srcset="images/foto3.webp 1x, images/foto3@2x.webp 2x">
+                  <img class="services__image" src="images/foto3.jpg" srcset="images/foto3@2x.jpg 2x" width="340"
+                    height="227" alt="Блондинка в белом нижнем белье на фоне красивого бежевого интерьера.">
+                </picture>
+              </div>
+              <div class="services__icon">
+                <svg width="14" height="12">
+                  <use xlink:href="images/sprite_auto.svg#arrow"></use>
+                </svg>
+              </div>
+              <h3 class="services__text services__text-short">Индивидуальная<br> фотосессия</h3>
+            </a>
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link">
+              <div class="services__container-img">
+                <picture>
+                  <source type="image/webp" srcset="images/foto4.webp 1x, images/foto4@2x.webp 2x">
+                  <img class="services__image" src="images/foto4.jpg" srcset="images/foto4@2x.jpg 2x" width="340"
+                    height="227" alt="Смеющееся молодожены, седящие на столе.">
+                </picture>
+              </div>
+              <div class="services__icon">
+                <svg width="14" height="12">
+                  <use xlink:href="images/sprite_auto.svg#arrow"></use>
+                </svg>
+              </div>
+              <h3 class="services__text services__text-short">Свадебная<br> фотосессия</h3>
+            </a>
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link">
+              <div class="services__container-img">
+                <picture>
+                  <source type="image/webp" srcset="images/foto5.webp 1x, images/foto5@2x.webp 2x">
+                  <img class="services__image" src="images/foto5.jpg" srcset="images/foto5@2x.jpg 2x" width="340"
+                    height="227" alt="Молодая улыбающиеся пара, одетая в стиле ретро.">
+                </picture>
+              </div>
+              <div class="services__icon">
+                <svg width="14" height="12">
+                  <use xlink:href="images/sprite_auto.svg#arrow"></use>
+                </svg>
+              </div>
+              <h3 class="services__text">Love story<br> фотосессия</h3>
+            </a>
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link">
+              <div class="services__container-img">
+                <picture>
+                  <source type="image/webp" srcset="images/foto6.webp 1x, images/foto6@2x.webp 2x">
+                  <img class="services__image" src="images/foto6.jpg" srcset="images/foto6@2x.jpg 2x" width="340"
+                    height="227" alt="Красивое фото беременной девушки, лежащей на полу.">
+                </picture>
+              </div>
+              <div class="services__icon">
+                <svg width="14" height="12">
+                  <use xlink:href="images/sprite_auto.svg#arrow"></use>
+                </svg>
+              </div>
+              <h3 class="services__text">Для беременных<br> фотосессия</h3>
+            </a>
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link">
+              <div class="services__container-img">
+                <picture>
+                  <source type="image/webp" srcset="images/foto7.webp 1x, images/foto7@2x.webp 2x">
+                  <img class="services__image" src="images/foto7.jpg" srcset="images/foto7@2x.jpg 2x" width="340"
+                    height="227" alt="Улыбающаяся девушка в темно-фиолетовом платье на фоне белого интерьера.">
+                </picture>
+              </div>
+              <div class="services__icon">
+                <svg width="14" height="12">
+                  <use xlink:href="images/sprite_auto.svg#arrow"></use>
+                </svg>
+              </div>
+              <h3 class="services__text">Бизнес<br> портрет</h3>
+            </a>
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link">
+              <div class="services__container-img">
+                <picture>
+                  <source type="image/webp" srcset="images/foto8.webp 1x, images/foto8@2x.webp 2x">
+                  <img class="services__image" src="images/foto8.jpg" srcset="images/foto8@2x.jpg 2x" width="340"
+                    height="227" alt="Девушка со светлыми волосами, держащая в рукам парфюм, на фоне падающего снега.">
+                </picture>
+              </div>
+              <div class="services__icon">
+                <svg width="14" height="12">
+                  <use xlink:href="images/sprite_auto.svg#arrow"></use>
+                </svg>
+              </div>
+              <h3 class="services__text services__text-short">Рекламная<br> съёмка</h3>
+            </a>
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link">
+              <div class="services__container-img">
+                <picture>
+                  <source type="image/webp" srcset="images/foto9.webp 1x, images/foto9@2x.webp 2x">
+                  <img class="services__image" src="images/foto9.jpg" srcset="images/foto9@2x.jpg 2x" width="340"
+                    height="227"
+                    alt="Девушка в кросовках, сидящая на полу, рядом с небольшими гантелями и водой, у которой не видно лица">
+                </picture>
+              </div>
+              <div class="services__icon">
+                <svg width="14" height="12">
+                  <use xlink:href="images/sprite_auto.svg#arrow"></use>
+                </svg>
+              </div>
+              <h3 class="services__text">Репортажная<br> съёмка</h3>
+            </a>
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link">
+              <div class="services__container-img">
+                <picture>
+                  <source type="image/webp" srcset="images/foto10.webp 1x, images/foto10@2x.webp 2x">
+                  <img class="services__image" src="images/foto10.jpg" srcset="images/foto10@2x.jpg 2x" width="340"
+                    height="227" alt="Мотоцикл на фоне картин, с котом на седушке.">
+                </picture>
+              </div>
+              <div class="services__icon">
+                <svg width="14" height="12">
+                  <use xlink:href="images/sprite_auto.svg#arrow"></use>
+                </svg>
+              </div>
+              <h3 class="services__text">Фото<br> проекты</h3>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="rent" id="rent">
+        <h2 class="rent__heading heading">Аренда</h2>
+        <p class="rent__title title">Наши залы</p>
+        <div class="rent__contents">
+          <div class="rent__content rent__content--show">
+            <div class="rent__img-container">
+              <picture>
+                <source type="image/webp" srcset="images/placefoto.webp 1x, images/placefoto@2x.webp 2x">
+                <img class="services__image" src="images/placefoto.jpg" srcset="images/placefoto@2x.jpg 2x" width="586"
+                  height="391" alt="Интерьер в стиле футуризма.">
+              </picture>
+            </div>
+            <div class="rent__info">
+              <h3 class="rent__subtitle">Футуризм</h3>
+              <p class="rent__text">Просторный, светлый зал, выполненный в стиле футуризм и модерн.</p>
+              <a href="#" class="rent__link">Узнать больше о зале</a>
+            </div>
+          </div>
+          <div class="rent__content">
+            <div class="rent__img-container">
+              <picture>
+                <source type="image/webp" srcset="images/placefoto.webp 1x, images/placefoto@2x.webp 2x">
+                <img class="services__image" src="images/placefoto.jpg" srcset="images/placefoto@2x.jpg 2x" width="586"
+                  height="391" alt="Интерьер в стиле футуризма.">
+              </picture>
+            </div>
+            <div class="rent__info">
+              <h3 class="rent__subtitle">Космос</h3>
+              <p class="rent__text">Просторный, светлый зал, выполненный в стиле футуризм и модерн.</p>
+              <a href="#" class="rent__link">Узнать больше о зале</a>
+            </div>
+          </div>
+          <div class="rent__content">
+            <div class="rent__img-container">
+              <picture>
+                <source type="image/webp" srcset="images/placefoto.webp 1x, images/placefoto@2x.webp 2x">
+                <img class="services__image" src="images/placefoto.jpg" srcset="images/placefoto@2x.jpg 2x" width="586"
+                  height="391" alt="Интерьер в стиле футуризма.">
+              </picture>
+            </div>
+            <div class="rent__info">
+              <h3 class="rent__subtitle">Минимализм</h3>
+              <p class="rent__text">Просторный, светлый зал, выполненный в стиле футуризм и модерн.</p>
+              <a href="#" class="rent__link">Узнать больше о зале</a>
+            </div>
+          </div>
+          <div class="rent__buttons">
+            <button class="rent__button rent__button-back" type="button" aria-label="Предыдущий слайд">
+              <svg width="14" height="12">
+                <use xlink:href="images/sprite_auto.svg#arrow"></use>
+              </svg>
+            </button>
+            <button class="rent__button rent__button-next" type="button" aria-label="следующий слайд">
+              <svg width="14" height="12">
+                <use xlink:href="images/sprite_auto.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="rent__footer">
+          <a href="#" class="rent__link-more">
+            <p class="rent__link-text">Организация мероприятий в наших залах</p>
+            <svg class="rent__icon" width="74" height="74">
+              <use xlink:href="images/sprite_auto.svg#icon-organization"></use>
+            </svg>
+          </a>
+          <a href="#" class="rent__link-more">
+            <p class="rent__link-text rent__link-text-rent">Расписание и бронирование залов</p>
+            <svg class="rent__icon rent__icon-rent" width="75" height="75">
+              <use xlink:href="images/sprite_auto.svg#icon-place"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__info">
+        <p class="footer__phone">телефон администратора<br>
+          <a href="tel:+78002000600" class="footer__phone-link">8 800 2000 600</a>
+        </p>
+        <p class="footer__email">e-mail<br>
+          <a class="footer__email-link" href="emailto:vangog.fotostudia@yandex.ru"
+            class="footer__email-link">vangog.fotostudia@yandex.ru</a>
+        </p>
+        <address class="footer__address">адрес фотостудии<br>
+          <span class="footer__address-check">Челябинск, Худякова, 12а</span>
+        </address>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__text">&#169; Ип фёдоров с.с., 2017</p>
+        <p class="footer__site">Интернет агентство tian group:<br>
+          <a class="footer__site-link" href="#">создание и продвижение сайтов Челябинск</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

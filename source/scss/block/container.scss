@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+  @include container;
+  height: 100%;
+  border-left: 1px solid transparentize($color: #e0e0e0, $amount: 0.9);
+  border-right: 1px solid transparentize($color: #e0e0e0, $amount: 0.9);
+}
+
+.main>.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, auto);
+  background-image: url("../images/logo-main.png");
+  background-size: 355px 450px;
+  background-repeat: no-repeat;
+  background-position: 408px 560px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/logo-main@2x.png");
+  }
+}

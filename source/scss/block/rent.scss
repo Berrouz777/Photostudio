@@ -1,0 +1,195 @@
+.rent {
+  grid-column: 1/-1;
+  grid-row: 4/5;
+  padding-top: 42px;
+}
+
+.rent__title {
+  padding-top: 5px;
+}
+
+.rent__contents {
+  margin-top: 48px;
+}
+
+.rent__content {
+  z-index: -1;
+  display: none;
+  align-items: center;
+
+  &--show {
+    display: flex;
+    animation: moveFromRight 1s;
+  }
+}
+
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.rent__info {
+  height: 252px;
+  margin-left: -40px;
+  padding: 30px 40px;
+  background-color: $white;
+}
+
+.rent__subtitle {
+  font-family: "PlayfairDisplay", "Times New Roman", serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: $dark-blue;
+  cursor: default;
+  margin: 5px 0 0 0;
+}
+
+.rent__text {
+  position: relative;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: transparentize($color: $dark-blue, $amount: 0.4);
+  cursor: default;
+  margin: 20px 0 0 0;
+  padding-left: 82px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 61px;
+    height: 1px;
+    background-color: transparentize($color: $dark-blue, $amount: 0.6);
+    top: 13px;
+    left: 1px;
+  }
+}
+
+.rent__link {
+  display: block;
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 38px;
+  font-weight: 500;
+  width: 192px;
+  background-color: $orange;
+  color: transparentize($color: $dark-blue, $amount: 0.5);
+  text-decoration: none;
+  padding: 6px 0 6px 25px;
+  margin: 20px 0 0 84px;
+
+  &:hover {
+    background-color: $dark-orange;
+    transition-duration: 0.5s;
+  }
+
+  &:active {
+    color: transparentize($color: $dark-blue, $amount: 0.7);
+    transition-duration: 0.1s;
+  }
+}
+
+.rent__buttons {
+  display: flex;
+  margin: -27px 0 0 542px;
+}
+
+.rent__button {
+  z-index: 1;
+  width: 44px;
+  height: 44px;
+  background-color: $orange;
+  border: none;
+  cursor: pointer;
+
+  svg {
+    fill: transparentize($color: $dark-blue, $amount: 0.5);
+  }
+
+  &-next {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:hover {
+    background-color: $dark-orange;
+    transition-duration: 0.5s;
+  }
+}
+
+.rent__footer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 141px;
+  margin-top: 100px;
+}
+
+.rent__link-more {
+  display: flex;
+  background-color: $orange;
+  padding-left: 92px;
+  margin: 0;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $dark-orange;
+    transition-duration: 0.5s;
+  }
+
+  &:active {
+    background-color: transparentize($color: $dark-orange, $amount: 0.1);
+    transition-duration: 0.1s;
+  }
+}
+
+.rent__link-text {
+  position: relative;
+  font-family: "PlayfairDisplay", "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: $dark-blue;
+  width: 200px;
+  margin: 38px 0 0 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 10px;
+    background-image: url("../images/arrow.svg");
+    background-position: 0 -1px;
+    opacity: 0.5;
+    top: 30px;
+    left: 283px;
+    transform: rotate(180deg);
+  }
+
+  &-rent {
+    margin: 44px 0 0 0;
+
+    &::after {
+      top: 24px;
+      left: 290px;
+    }
+  }
+}
+
+.rent__icon {
+  margin: 32px 0 0 145px;
+
+  &-rent {
+    margin-left: 155px;
+  }
+}
